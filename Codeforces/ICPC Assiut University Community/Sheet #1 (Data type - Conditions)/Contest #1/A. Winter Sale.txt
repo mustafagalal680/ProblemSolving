@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    double discount;
+    double AfterTheDiscount;
+    cin>>discount>>AfterTheDiscount;
+    double Total=AfterTheDiscount/(1-(discount/100));
+    cout<<Total<<endl;
+ 
+    return 0;
+}

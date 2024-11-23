@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+ 
+int main() {
+    int a, b;
+    cin >> a >> b;
+    
+    int n = a + b;
+    if (n == 0) {
+        cout << "NO" << endl;
+        return 0;
+    }
+    
+    if (n % 2 == 0) { // n is even
+        if (a == b)
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    } else { // n is odd
+        if (abs(a - b) == 1)
+            cout << "YES" << endl;
+        else
+            cout << "NO" << endl;
+    }
+    
+    return 0;
+}
